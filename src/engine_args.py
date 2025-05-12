@@ -77,7 +77,7 @@ def get_default_args():
         "preemption_mode": os.getenv('PREEMPTION_MODE', None),
         "scheduler_delay_factor": float(os.getenv('SCHEDULER_DELAY_FACTOR', 0.0)),
         "enable_chunked_prefill": os.getenv('ENABLE_CHUNKED_PREFILL', None),
-        "guided_decoding_backend": os.getenv('GUIDED_DECODING_BACKEND', 'outlines'),
+        # "guided_decoding_backend": os.getenv('GUIDED_DECODING_BACKEND', 'outlines'),
         "speculative_model": os.getenv('SPECULATIVE_MODEL', None),
         "speculative_draft_tensor_parallel_size": int(os.getenv('SPECULATIVE_DRAFT_TENSOR_PARALLEL_SIZE', 0)) or None,
         "num_speculative_tokens": int(os.getenv('NUM_SPECULATIVE_TOKENS', 0)) or None,
